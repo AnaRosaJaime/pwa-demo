@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build:dev": "tsc",
     "build:watch": "tsc --watch",
-    "build:prod": "rimraf dist/ && tsc && rollup -c",
-    "start": "concurrently \"tsc --watch\" \"es-dev-server --app-index index.html --compatibility none --node-resolve --watch --open\"",
+    "build": "rimraf dist/ && tsc && rollup -c",
+    "start:dev": "concurrently \"tsc --watch\" \"es-dev-server --app-index index.html --compatibility none --node-resolve --watch --open\"",
     "dev": "concurrently \"tsc --watch\" \"es-dev-server --app-index index.html --compatibility none --node-resolve --watch --open\""
   },
   "author": "",
